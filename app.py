@@ -43,6 +43,13 @@ app.py — точка входа Streamlit-дашборда
 """
 
 import streamlit as st
+# Принудительная установка вашей кастомной светлой темы
+st._config.set_option("theme.base", "light")
+st._config.set_option("theme.primaryColor", "#f63366")
+st._config.set_option("theme.backgroundColor", "#FFFFFF")
+st._config.set_option("theme.secondaryBackgroundColor", "#F0F2F6")
+st._config.set_option("theme.textColor", "#262730")
+st._config.set_option("theme.font", "sans serif")
 
 # ── Конфигурация страницы (обязательно первый вызов st) ──────────────────────
 st.set_page_config(
