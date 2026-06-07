@@ -1,0 +1,167 @@
+{
+  "description": "Portfolio selector v2 — только ОФЗ-ПД (SU29xxx флоатеры удалены)",
+  "signal_rules": [
+    {
+      "p_range": "0.00–0.50",
+      "signal": "WAIT",
+      "dur_target": 0.0,
+      "max_bonds": 0,
+      "description": "Флоатеры / денежный рынок. ОФЗ-ПД не покупать."
+    },
+    {
+      "p_range": "0.50–0.65",
+      "signal": "WEAK BUY",
+      "dur_target": 4.0,
+      "max_bonds": 3,
+      "description": "Средние ОФЗ-ПД. Дюрация 3–5 лет. Осторожный вход."
+    },
+    {
+      "p_range": "0.65–0.80",
+      "signal": "BUY",
+      "dur_target": 6.0,
+      "max_bonds": 4,
+      "description": "Длинные ОФЗ-ПД. Дюрация 5–7 лет. Основная позиция."
+    },
+    {
+      "p_range": "0.80–1.01",
+      "signal": "STRONG BUY",
+      "dur_target": 9.0,
+      "max_bonds": 5,
+      "description": "Самые длинные ОФЗ-ПД. Дюрация 7+ лет. Полная аллокация."
+    }
+  ],
+  "examples": [
+    {
+      "p": 0.3,
+      "signal": "WAIT",
+      "dur_target": 0.0,
+      "description": "Флоатеры / денежный рынок. ОФЗ-ПД не покупать.",
+      "portfolio": []
+    },
+    {
+      "p": 0.57,
+      "signal": "WEAK BUY",
+      "dur_target": 4.0,
+      "description": "Средние ОФЗ-ПД. Дюрация 3–5 лет. Осторожный вход.",
+      "portfolio": [
+        {
+          "SECID": "SU26251RMFS7",
+          "SHORTNAME": "ОФЗ 26251",
+          "duration_years": 4.2,
+          "bucket": "mid",
+          "COUPONPERCENT": 9.5,
+          "weight_pct": 33
+        },
+        {
+          "SECID": "SU26228RMFS5",
+          "SHORTNAME": "ОФЗ 26228",
+          "duration_years": 3.8,
+          "bucket": "mid",
+          "COUPONPERCENT": 7.65,
+          "weight_pct": 33
+        },
+        {
+          "SECID": "SU26235RMFS0",
+          "SHORTNAME": "ОФЗ 26235",
+          "duration_years": 4.8,
+          "bucket": "mid",
+          "COUPONPERCENT": 5.9,
+          "weight_pct": 34
+        }
+      ],
+      "actual_duration": 4.27
+    },
+    {
+      "p": 0.72,
+      "signal": "BUY",
+      "dur_target": 6.0,
+      "description": "Длинные ОФЗ-ПД. Дюрация 5–7 лет. Основная позиция.",
+      "portfolio": [
+        {
+          "SECID": "SU26249RMFS1",
+          "SHORTNAME": "ОФЗ 26249",
+          "duration_years": 6.0,
+          "bucket": "long",
+          "COUPONPERCENT": 11.0,
+          "weight_pct": 25
+        },
+        {
+          "SECID": "SU26241RMFS8",
+          "SHORTNAME": "ОФЗ 26241",
+          "duration_years": 6.5,
+          "bucket": "long",
+          "COUPONPERCENT": 9.5,
+          "weight_pct": 25
+        },
+        {
+          "SECID": "SU26218RMFS6",
+          "SHORTNAME": "ОФЗ 26218",
+          "duration_years": 5.3,
+          "bucket": "long",
+          "COUPONPERCENT": 8.5,
+          "weight_pct": 25
+        },
+        {
+          "SECID": "SU26221RMFS0",
+          "SHORTNAME": "ОФЗ 26221",
+          "duration_years": 6.8,
+          "bucket": "long",
+          "COUPONPERCENT": 7.7,
+          "weight_pct": 25
+        }
+      ],
+      "actual_duration": 6.15
+    },
+    {
+      "p": 0.88,
+      "signal": "STRONG BUY",
+      "dur_target": 9.0,
+      "description": "Самые длинные ОФЗ-ПД. Дюрация 7+ лет. Полная аллокация.",
+      "portfolio": [
+        {
+          "SECID": "SU26233RMFS5",
+          "SHORTNAME": "ОФЗ 26233",
+          "duration_years": 9.1,
+          "bucket": "long",
+          "COUPONPERCENT": 6.1,
+          "weight_pct": 20
+        },
+        {
+          "SECID": "SU26245RMFS9",
+          "SHORTNAME": "ОФЗ 26245",
+          "duration_years": 9.3,
+          "bucket": "long",
+          "COUPONPERCENT": 12.0,
+          "weight_pct": 20
+        },
+        {
+          "SECID": "SU46020RMFS2",
+          "SHORTNAME": "ОФЗ 46020",
+          "duration_years": 9.7,
+          "bucket": "long",
+          "COUPONPERCENT": 6.9,
+          "weight_pct": 20
+        },
+        {
+          "SECID": "SU26246RMFS7",
+          "SHORTNAME": "ОФЗ 26246",
+          "duration_years": 9.8,
+          "bucket": "long",
+          "COUPONPERCENT": 12.0,
+          "weight_pct": 20
+        },
+        {
+          "SECID": "SU26225RMFS1",
+          "SHORTNAME": "ОФЗ 26225",
+          "duration_years": 7.9,
+          "bucket": "long",
+          "COUPONPERCENT": 7.25,
+          "weight_pct": 20
+        }
+      ],
+      "actual_duration": 9.16
+    }
+  ],
+  "available_ofz_pd_count": 35,
+  "note": "SU29xxx (ОФЗ-ПК, флоатеры RUONIA-linked) исключены. Только ОФЗ-ПД."
+}

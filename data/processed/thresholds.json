@@ -1,0 +1,5 @@
+{
+  "key_rate_buy_threshold": 4.25,
+  "delta_ks_3m_buy_threshold": 0.5,
+  "note": "PDP LightGBM Classifier + carry-признаки"
+}

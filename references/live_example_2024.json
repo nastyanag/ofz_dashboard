@@ -1,0 +1,47 @@
+{
+  "signal_date": "2024-07-05",
+  "key_rate": 16.0,
+  "actual_date": "2024-07-05",
+  "y_pred": 0.19273,
+  "p_converted": 0.724,
+  "signal": "BUY",
+  "dur_target": 6.0,
+  "description": "Длинные ОФЗ-ПД. Дюрация 5–7 лет. Основная позиция.",
+  "y_true_realized": -0.08456,
+  "realized_correct": false,
+  "portfolio": [
+    {
+      "SECID": "SU26249RMFS1",
+      "SHORTNAME": "ОФЗ 26249",
+      "duration_years": 6.0,
+      "bucket": "long",
+      "COUPONPERCENT": 11.0,
+      "weight_pct": 25
+    },
+    {
+      "SECID": "SU26241RMFS8",
+      "SHORTNAME": "ОФЗ 26241",
+      "duration_years": 6.5,
+      "bucket": "long",
+      "COUPONPERCENT": 9.5,
+      "weight_pct": 25
+    },
+    {
+      "SECID": "SU26218RMFS6",
+      "SHORTNAME": "ОФЗ 26218",
+      "duration_years": 5.3,
+      "bucket": "long",
+      "COUPONPERCENT": 8.5,
+      "weight_pct": 25
+    },
+    {
+      "SECID": "SU26221RMFS0",
+      "SHORTNAME": "ОФЗ 26221",
+      "duration_years": 6.8,
+      "bucket": "long",
+      "COUPONPERCENT": 7.7,
+      "weight_pct": 25
+    }
+  ],
+  "avg_duration": 6.2
+}
